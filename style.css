@@ -5,6 +5,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #8EAC50, #D3D04F);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -28,7 +33,6 @@ nav .nav_a {
   margin-top: 40px;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to right, #F9DEC9, #F78CA2);
 }
 
 .cards_1 {
@@ -93,7 +97,7 @@ nav .nav_a {
   color: white;
 }
 .card1 h1 {
-  color: blue;
+  color: white;
 }
 
 @media (max-width: 478px) {
@@ -162,6 +166,7 @@ nav .nav_a {
 }
 #Contact p {
   font-size: 15px;
+  color: white;
 }
 
 #project {

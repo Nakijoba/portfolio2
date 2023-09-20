@@ -10,6 +10,10 @@ $paragraphcolor: purple;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+body{
+  height:100vh;
+   background: linear-gradient(to right,#8EAC50,#D3D04F)
+}
 
 html {
   scroll-behavior: smooth;
@@ -32,7 +36,7 @@ nav {
   margin-top: 40px;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to right,#F9DEC9,#F78CA2)
+  // background: linear-gradient(to right,#FF3FA4,#FF9B82)
 }
 .cards_1 {
   display: none;
@@ -95,7 +99,7 @@ nav {
     color: white;
   }
   h1 {
-    color: $othercolor;
+    color: white;
   }
 }
 @media (max-width: 478px) {
@@ -161,6 +165,7 @@ nav {
   }
   p {
     font-size: 15px;
+    color: white;
   }
 }
 #project {
