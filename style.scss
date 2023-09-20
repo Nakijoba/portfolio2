@@ -1,0 +1,236 @@
+$othercolor: blue;
+$teritorycolor: white;
+$primarycolor: black;
+$secondarycolor: pink;
+$paragraphcolor: purple;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+nav {
+  padding-left: 80%;
+  padding-top: 30px;
+  .nav_a {
+    font-size: 15px;
+    padding-right: 25px;
+    text-decoration: none;
+  }
+}
+.cards {
+  display: flex;
+  gap: 3rem;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right,#F9DEC9,#F78CA2)
+}
+.cards_1 {
+  display: none;
+}
+.card1 {
+  width: 60vw;
+  height: 70vh;
+  padding: 30px;
+  color: white;
+  margin-left: 40px;
+  border-radius: 20px;
+  background-color: black;
+  border: 1px solid $secondarycolor;
+  .skills {
+    display: flex;
+    padding-top: 40px;
+    flex-direction: column;
+  }
+  .contact_me {
+    padding: 8px;
+    width: 130px;
+    border-radius: 20px;
+    
+  }
+  .card1_1 {
+    display: none;
+  }
+  .skills_1 {
+    gap: 2rem;
+    display: flex;
+    font-size: 15px;
+    padding-top: 10px;
+    flex-direction: row;
+  }
+  .front_end {
+    font-size: 35px;
+    padding-top: 20px;
+    color: white;
+  }
+  .profile {
+    font-size: 15px;
+    padding-top: 20px;
+  }
+  .links {
+    font-size: 25px;
+    padding-top: 30px;
+  }
+  .links a {
+    width: 20px;
+    height: 20px;
+    color: black;
+    font-size: 24px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: black;
+  }
+  h4 {
+    font-size: 13px;
+    color: white;
+  }
+  h1 {
+    color: $othercolor;
+  }
+}
+@media (max-width: 478px) {
+  .cards_1 {
+    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+  .card2_1 .mine {
+    width: 250px;
+    margin: 20px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  .cards {
+    display: none;
+  }
+}
+.card2 {
+  width: 40vw;
+  height: 70vh;
+  .mine {
+    width: 30vw;
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  .card2_1 {
+    display: none;
+  }
+}
+#Contact {
+  width: 80vw;
+  height: 20vw;
+  padding: 20px;
+  margin-top: 50px;
+  margin-left: 130px;
+  border-radius: 20px;
+  background-color: black;
+
+  .links_1 {
+    padding-top: 100px;
+  }
+  .contact_me {
+    padding: 8px;
+    width: 130px;
+    border-radius: 20px;
+  }
+  .links_1 a {
+    width: 30px;
+    height: 20px;
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: black;
+  }
+  h1 {
+    color: white;
+    font-size: 43px;
+  }
+  p {
+    font-size: 15px;
+  }
+}
+#project {
+  display: flex;
+  flex-direction: column;
+  .first_card{
+    display: grid;
+    padding: 0 4rem;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .second_card{ 
+    
+  display: grid;
+  padding: 0 4rem;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .card1_project{
+    height: 80%;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: black;
+  
+  }
+  .card2_project{
+    height: 80%;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: black;
+  
+  }
+  .card3_project{
+    height: 80%;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: black;
+  }
+  .card4_project {
+    height: 80%;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color:black;
+  }
+    .title {
+      padding: 15px;
+      font-size: 20px;
+      color: white;
+    }
+    .description {
+      gap: 16rem;
+      padding: 5px;
+      display: flex;
+      font-size: 15px;
+      color: white;
+    }
+    a {
+      font-size: 35px;
+    }
+    .proj_image {
+      width: 80%;
+      height: 50%;
+      object-fit: contain;
+    
+    }
+    .proj_image1{
+      width: 80%;
+      height: 20%;
+      object-fit: contain;
+    }
+  
+}
