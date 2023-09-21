@@ -11,7 +11,9 @@ $paragraphcolor: purple;
   font-family: "Poppins", sans-serif;
 }
 body{
+
   height:100vh;
+ 
    background: linear-gradient(to right,#0A2647,#144272);
 }
 
@@ -28,30 +30,29 @@ nav {
     color:white;
   }
 }
-.cards {
+#Home{
   display: flex;
   gap: 3rem;
-  width: 100%;
-  height: 100vh;
-  padding: 20px;
+  width: 90%;
+  height: 80%;
+  // padding: 20px;
   margin-top: 10px;
   align-items: center;
   justify-content: center;
-  // background: linear-gradient(to right,#FF3FA4,#FF9B82)
-}
-.cards_1 {
-  display: none;
-  
-}
+  margin-left: 50px;
+
+  // background: linear-gradient(to right,#E55604,#E55604);
+
 .card1 {
-  width: 60vw;
-  height: 70vh;
+  width: 60%;
+  height: 90%;
   padding: 30px;
   color: white;
   margin-left: 40px;
   border-radius: 20px;
   background-color: black;
   border: 1px solid $secondarycolor;
+
   .skills {
     display: flex;
     padding-top: 40px;
@@ -63,15 +64,13 @@ nav {
     border-radius: 20px;
     
   }
-  .card1_1 {
-    display: none;
-  }
+  
   .skills_1 {
     gap: 2rem;
     display: flex;
     font-size: 15px;
     padding-top: 10px;
-    flex-direction: row;
+    
   }
   .front_end {
     font-size: 35px;
@@ -105,23 +104,32 @@ nav {
     color: white;
   }
 }
-
-.card2 {
-  width: 40vw;
-  height: 70vh;
-  .mine {
-    width: 30vw;
-    height: 70vh;
-    object-fit: cover;
+  .card2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     gap:4rem;
+    width: 40%;
+    height: 90%;
     border-radius: 20px;
-  }
-  .card2_1 {
-    display: none;
+      object-fit: cover;
+      overflow: hidden;
+      
+  
+    .mine {
+      width: 100%;
+      height: 100%;
+    }
+    
+    
+  
   }
 }
+
+
 #Contact {
-  width: 80vw;
-  height: 20vw;
+  width: 80%;
+  height: 20%;
   padding: 20px;
   margin-top: 50px;
   margin-left: 130px;
@@ -173,27 +181,48 @@ nav {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
   .card1_project{
-    height: 50%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width:90%;
     overflow: hidden;
     border-radius: 20px;
     background-color: black;
   
   }
+  
   .card2_project{
-    height: 50%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width:90%;
     overflow: hidden;
     border-radius: 20px;
     background-color: black;
   
   }
   .card3_project{
-    height: 80%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width:90%;
     overflow: hidden;
     border-radius: 20px;
     background-color: black;
   }
   .card4_project {
-    height: 80%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width:90%;
     overflow: hidden;
     border-radius: 20px;
     background-color:black;
@@ -216,13 +245,13 @@ nav {
     .proj_image {
       width: 80%;
       height: 50%;
-      object-fit: contain;
+      object-fit: cover;
     
     }
     .proj_image1{
       width: 80%;
       height: 20%;
-      object-fit: contain;
+      object-fit: cover;
     }
   
 }

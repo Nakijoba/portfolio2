@@ -25,24 +25,19 @@ nav .nav_a {
   color: white;
 }
 
-.cards {
+#Home {
   display: flex;
   gap: 3rem;
-  width: 100%;
-  height: 100vh;
-  padding: 20px;
+  width: 90%;
+  height: 80%;
   margin-top: 10px;
   align-items: center;
   justify-content: center;
+  margin-left: 50px;
 }
-
-.cards_1 {
-  display: none;
-}
-
-.card1 {
-  width: 60vw;
-  height: 70vh;
+#Home .card1 {
+  width: 60%;
+  height: 90%;
   padding: 30px;
   color: white;
   margin-left: 40px;
@@ -50,40 +45,36 @@ nav .nav_a {
   background-color: black;
   border: 1px solid pink;
 }
-.card1 .skills {
+#Home .card1 .skills {
   display: flex;
   padding-top: 40px;
   flex-direction: column;
 }
-.card1 .contact_me {
+#Home .card1 .contact_me {
   padding: 8px;
   width: 130px;
   border-radius: 20px;
 }
-.card1 .card1_1 {
-  display: none;
-}
-.card1 .skills_1 {
+#Home .card1 .skills_1 {
   gap: 2rem;
   display: flex;
   font-size: 15px;
   padding-top: 10px;
-  flex-direction: row;
 }
-.card1 .front_end {
+#Home .card1 .front_end {
   font-size: 35px;
   padding-top: 20px;
   color: white;
 }
-.card1 .profile {
+#Home .card1 .profile {
   font-size: 15px;
   padding-top: 20px;
 }
-.card1 .links {
+#Home .card1 .links {
   font-size: 25px;
   padding-top: 30px;
 }
-.card1 .links a {
+#Home .card1 .links a {
   width: 25px;
   padding: 10px;
   color: white;
@@ -93,32 +84,33 @@ nav .nav_a {
   border: 1px solid white;
   background-color: black;
 }
-.card1 h4 {
+#Home .card1 h4 {
   font-size: 13px;
   color: white;
 }
-.card1 h1 {
+#Home .card1 h1 {
   color: white;
 }
-
-.card2 {
-  width: 40vw;
-  height: 70vh;
-}
-.card2 .mine {
-  width: 30vw;
-  height: 70vh;
+#Home .card2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  width: 40%;
+  height: 90%;
+  border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 20px;
+  overflow: hidden;
 }
-.card2 .card2_1 {
-  display: none;
+#Home .card2 .mine {
+  width: 100%;
+  height: 100%;
 }
 
 #Contact {
-  width: 80vw;
-  height: 20vw;
+  width: 80%;
+  height: 20%;
   padding: 20px;
   margin-top: 50px;
   margin-left: 130px;
@@ -169,25 +161,45 @@ nav .nav_a {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 #project .card1_project {
-  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  width: 90%;
   overflow: hidden;
   border-radius: 20px;
   background-color: black;
 }
 #project .card2_project {
-  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  width: 90%;
   overflow: hidden;
   border-radius: 20px;
   background-color: black;
 }
 #project .card3_project {
-  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  width: 90%;
   overflow: hidden;
   border-radius: 20px;
   background-color: black;
 }
 #project .card4_project {
-  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  width: 90%;
   overflow: hidden;
   border-radius: 20px;
   background-color: black;
@@ -210,12 +222,12 @@ nav .nav_a {
 #project .proj_image {
   width: 80%;
   height: 50%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #project .proj_image1 {
   width: 80%;
   height: 20%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
