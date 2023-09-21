@@ -1,8 +1,7 @@
-$othercolor: blue;
-$teritorycolor: white;
+$othercolor: gold;
+$secondarycolor: white;
 $primarycolor: black;
-$secondarycolor: pink;
-$paragraphcolor: purple;
+
 
 * {
   margin: 0;
@@ -17,6 +16,10 @@ body{
    background: linear-gradient(to right,#0A2647,#144272);
 }
 
+.dark-theme{
+  --primary:#0f172a;
+  --secondary:#f97316;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -47,10 +50,10 @@ nav {
   width: 60%;
   height: 90%;
   padding: 30px;
-  color: white;
+  color: $secondarycolor;
   margin-left: 40px;
   border-radius: 20px;
-  background-color: black;
+  background-color: $primarycolor;
   border: 1px solid $secondarycolor;
 
   .skills {
@@ -75,7 +78,7 @@ nav {
   .front_end {
     font-size: 35px;
     padding-top: 20px;
-    color: white;
+    color: $secondarycolor;
   }
   .profile {
     font-size: 15px;
@@ -89,19 +92,19 @@ nav {
   .links a {
     width: 25px;
  padding: 10px;
-    color: white;
+    color: $secondarycolor;
     font-size: 18px;
     margin-left: 20px;
     border-radius: 10px;
-    border: 1px solid white;
-    background-color: black;
+    border: 1px solid $secondarycolor;
+    background-color: $primarycolor;
   }
   h4 {
     font-size: 13px;
-    color: white;
+    color: $secondarycolor;
   }
   h1 {
-    color: white;
+    color: $secondarycolor;
   }
 }
   .card2 {
@@ -120,8 +123,6 @@ nav {
       width: 100%;
       height: 100%;
     }
-    
-    
   
   }
 }
@@ -134,7 +135,7 @@ nav {
   margin-top: 50px;
   margin-left: 130px;
   border-radius: 20px;
-  background-color: black;
+  background-color: $primarycolor;
 
   .links_1 {
     padding-top: 100px;
@@ -145,24 +146,27 @@ nav {
     border-radius: 20px;
   }
   .links_1 a {
-    width: 30px;
-    height: 20px;
-    color: white;
-    font-size: 20px;
+    width: 20px;
+    padding: 10px;
+    color: $secondarycolor;
+    font-size: 25px;
     margin-left: 20px;
     border-radius: 20px;
-    border: 1px solid white;
-    background-color: black;
+    border: 1px solid $secondarycolor;
+    background-color: $primarycolor;
   }
   h1 {
-    color: white;
+    color: $secondarycolor;
     font-size: 43px;
   }
   p {
     font-size: 15px;
-    color: white;
+    color: $secondarycolor;
   }
+  
 }
+
+
 #project {
   display: flex;
   flex-direction: column;
@@ -189,7 +193,7 @@ nav {
     width:90%;
     overflow: hidden;
     border-radius: 20px;
-    background-color: black;
+    background-color: $primarycolor;
   
   }
   
@@ -202,7 +206,7 @@ nav {
     width:90%;
     overflow: hidden;
     border-radius: 20px;
-    background-color: black;
+    background-color: $primarycolor;
   
   }
   .card3_project{
@@ -214,7 +218,7 @@ nav {
     width:90%;
     overflow: hidden;
     border-radius: 20px;
-    background-color: black;
+    background-color: $primarycolor;
   }
   .card4_project {
     display:flex;
@@ -225,22 +229,23 @@ nav {
     width:90%;
     overflow: hidden;
     border-radius: 20px;
-    background-color:black;
+    background-color:$primarycolor;
   }
     .title {
       padding: 15px;
       font-size: 20px;
-      color: white;
+      color: $secondarycolor;
     }
     .description {
-      gap: 16rem;
+      gap: 13rem;
       padding: 5px;
       display: flex;
       font-size: 15px;
-      color: white;
+      color: $secondarycolor;
     }
     a {
       font-size: 35px;
+      color:$secondarycolor
     }
     .proj_image {
       width: 80%;
