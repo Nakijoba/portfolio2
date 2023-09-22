@@ -30,6 +30,15 @@ nav .nav_a {
   color: white;
 }
 
+@media (max-width: 478px) {
+  nav {
+    padding-left: 20%;
+  }
+  nav .nav_a {
+    font-size: 10px;
+    padding-right: 2px;
+  }
+}
 #Home {
   display: flex;
   gap: 3rem;
@@ -76,6 +85,7 @@ nav .nav_a {
   padding-top: 20px;
 }
 #Home .card1 .links {
+  display: flex;
   font-size: 25px;
   padding-top: 30px;
 }
@@ -107,12 +117,93 @@ nav .nav_a {
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
+  border: 1px solid black;
 }
 #Home .card2 .mine {
   width: 100%;
   height: 100%;
 }
 
+@media (max-width: 478px) {
+  #Home {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    height: 80%;
+    margin-top: 1px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  #Home .card1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60%;
+    padding: 20px;
+    margin-left: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+  #Home .card1 .skills h4 {
+    font-size: 15px;
+  }
+  #Home .card1 .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  #Home .card1 .contact_me {
+    padding: 3px;
+    width: 100px;
+    font-size: 15px;
+  }
+  #Home .card1 .skills_1 {
+    gap: 2rem;
+    font-size: 10px;
+    padding-top: 0px;
+  }
+  #Home .card1 .front_end {
+    font-size: 20px;
+    padding-top: 2px;
+  }
+  #Home .card1 .profile {
+    font-size: 15px;
+    padding-top: 2px;
+  }
+  #Home .card1 .links {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1px;
+    align-items: center;
+    justify-content: center;
+  }
+  #Home .card1 .links a {
+    width: 30px;
+    padding: 5px;
+    font-size: 16px;
+    margin-left: 0px;
+  }
+  #Home .card1 .links_a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  #Home .card1 h4 {
+    font-size: 28px;
+  }
+  #Home .card1 h1 {
+    font-size: 25px;
+  }
+  #Home .card2 {
+    width: 100%;
+    height: 40%;
+  }
+}
 #Contact {
   width: 80%;
   height: 20%;
@@ -121,21 +212,22 @@ nav .nav_a {
   margin-left: 130px;
   border-radius: 20px;
   background-color: black;
+  border: 1px solid white;
 }
 #Contact .links_1 {
   padding-top: 100px;
 }
 #Contact .contact_me {
-  padding: 8px;
+  padding: 5px;
   width: 130px;
   border-radius: 20px;
 }
 #Contact .links_1 a {
-  width: 20px;
+  width: 15px;
   padding: 5px;
   color: white;
-  font-size: 25px;
-  margin-left: 20px;
+  font-size: 15px;
+  margin-left: 15px;
   border-radius: 10px;
   border: 1px solid white;
   background-color: black;
@@ -149,6 +241,42 @@ nav .nav_a {
   color: white;
 }
 
+@media (max-width: 478px) {
+  #Contact {
+    width: 70%;
+    height: 28%;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 0px;
+    border-radius: 20px;
+  }
+  #Contact .links_1 {
+    padding-top: 10px;
+  }
+  #Contact .contact_me {
+    padding: 5px;
+    width: 80px;
+    border-radius: 20px;
+  }
+  #Contact .links_1 a {
+    width: 20px;
+    padding: 5px;
+    color: white;
+    font-size: 15px;
+    margin-left: 0px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: black;
+  }
+  #Contact h1 {
+    color: white;
+    font-size: 3px;
+  }
+  #Contact p {
+    font-size: 6px;
+    color: white;
+  }
+}
 #project {
   display: flex;
   flex-direction: column;
@@ -175,6 +303,7 @@ nav .nav_a {
   overflow: hidden;
   border-radius: 20px;
   background-color: black;
+  border: 1px solid white;
 }
 #project .card2_project {
   display: flex;
@@ -186,6 +315,7 @@ nav .nav_a {
   overflow: hidden;
   border-radius: 20px;
   background-color: black;
+  border: 1px solid white;
 }
 #project .card3_project {
   display: flex;
@@ -197,6 +327,7 @@ nav .nav_a {
   overflow: hidden;
   border-radius: 20px;
   background-color: black;
+  border: 1px solid white;
 }
 #project .card4_project {
   display: flex;
@@ -208,6 +339,7 @@ nav .nav_a {
   overflow: hidden;
   border-radius: 20px;
   background-color: black;
+  border: 1px solid white;
 }
 #project .title {
   padding: 15px;
@@ -236,4 +368,39 @@ nav .nav_a {
   height: 20%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 478px) {
+  #project {
+    display: flex;
+    flex-direction: column;
+  }
+  #project .card1_project {
+    height: 100%;
+    width: 90%;
+  }
+  #project .card2_project {
+    height: 90%;
+    width: 90%;
+  }
+  #project .card3_project {
+    height: 100%;
+    width: 90%;
+  }
+  #project .card4_project {
+    height: 90%;
+    width: 90%;
+  }
+  #project .title {
+    padding: 10px;
+    font-size: 15px;
+  }
+  #project .description {
+    gap: 8rem;
+    padding: 2px;
+    font-size: 10px;
+  }
+  #project a {
+    font-size: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
