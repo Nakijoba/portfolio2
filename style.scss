@@ -276,38 +276,38 @@ nav {
 }
 @media (max-width: 478px){
   #Contact{
-    width: 70%;
-    height: 28%;
+    width: 95%;
+    height: 20%;
     padding: 20px;
-    margin-top: 20px;
-    margin-left: 0px;
+    margin-top: 10px;
+    margin-left: 10px;
     border-radius: 20px;
   
   .links_1 {
-    padding-top: 10px;
+    
+    padding-top: 30px;
+   
   }
   .contact_me {
     padding: 5px;
-    width: 80px;
+    width: 100px;
     border-radius: 20px;
   }
   .links_1 a {
     width: 20px;
     padding: 5px;
-    color: $secondarycolor;
+    
     font-size: 15px;
-    margin-left: 0px;
-    border-radius: 10px;
-    border: 1px solid $secondarycolor;
-    background-color: $primarycolor;
+    margin-left: 10px;
+ 
   }
   h1 {
-    color: $secondarycolor;
-    font-size: 3px;
+    
+    font-size: 20px;
   }
   p {
-    font-size: 6px;
-    color: $secondarycolor;
+    font-size: 13px;
+    
   }
 }
 }
@@ -414,15 +414,19 @@ nav {
   #project {
     display: flex;
     flex-direction: column;
-    // .first_card{
-    //   display: grid;
-    //   padding: 0 4rem;
-    //   place-items: center;
-    //   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    .first_card{
+      display: grid;
+      padding: 0 4rem;
+      place-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       
-    // }
+    }
   
-    // .second_card{ 
+    .second_card{ 
+// width:400px;
+height:500px;
+
+    }
     
     
     .card1_project{

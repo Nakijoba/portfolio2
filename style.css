@@ -243,38 +243,32 @@ nav .nav_a {
 
 @media (max-width: 478px) {
   #Contact {
-    width: 70%;
-    height: 28%;
+    width: 95%;
+    height: 20%;
     padding: 20px;
-    margin-top: 20px;
-    margin-left: 0px;
+    margin-top: 10px;
+    margin-left: 10px;
     border-radius: 20px;
   }
   #Contact .links_1 {
-    padding-top: 10px;
+    padding-top: 30px;
   }
   #Contact .contact_me {
     padding: 5px;
-    width: 80px;
+    width: 100px;
     border-radius: 20px;
   }
   #Contact .links_1 a {
     width: 20px;
     padding: 5px;
-    color: white;
     font-size: 15px;
-    margin-left: 0px;
-    border-radius: 10px;
-    border: 1px solid white;
-    background-color: black;
+    margin-left: 10px;
   }
   #Contact h1 {
-    color: white;
-    font-size: 3px;
+    font-size: 20px;
   }
   #Contact p {
-    font-size: 6px;
-    color: white;
+    font-size: 13px;
   }
 }
 #project {
@@ -374,6 +368,15 @@ nav .nav_a {
   #project {
     display: flex;
     flex-direction: column;
+  }
+  #project .first_card {
+    display: grid;
+    padding: 0 4rem;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  #project .second_card {
+    height: 500px;
   }
   #project .card1_project {
     height: 100%;
