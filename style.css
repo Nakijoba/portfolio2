@@ -463,13 +463,13 @@ nav .nav_a {
     display: grid;
     padding: 0rem;
     place-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   }
   #project .second_card {
     display: grid;
     padding: 0rem;
     place-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   }
   #project .card1_project {
     height: 95%;
