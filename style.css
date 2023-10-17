@@ -242,7 +242,8 @@ nav .nav_a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 10px;
+    padding-top: 13px;
+    gap: 0.5em;
   }
   #Home1 .card1 .contact_me {
     padding: 3px;
@@ -251,7 +252,7 @@ nav .nav_a {
   }
   #Home1 .card1 .skills_1 {
     gap: 2rem;
-    font-size: 10px;
+    font-size: 12px;
     padding-top: 0px;
   }
   #Home1 .card1 .front_end {
@@ -265,9 +266,10 @@ nav .nav_a {
   #Home1 .card1 .links {
     display: flex;
     flex-direction: column;
-    padding-top: 1px;
+    padding-top: 10px;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
   }
   #Home1 .card1 .links a {
     width: 25px;
@@ -279,7 +281,7 @@ nav .nav_a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
   }
   #Home1 .card1 h4 {
     font-size: 28px;
@@ -288,9 +290,15 @@ nav .nav_a {
     font-size: 15px;
   }
   #Home1 .card2 {
-    width: 50%;
+    width: 60%;
     height: 40%;
     border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid black;
+  }
+  #Home1 .card2 .mine {
+    width: 100%;
+    height: 100%;
   }
 }
 #Contact {
