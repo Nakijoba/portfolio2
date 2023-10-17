@@ -251,7 +251,7 @@ nav .nav_a {
     font-size: 10px;
   }
   #Home1 .card1 .skills_1 {
-    gap: 2rem;
+    gap: 2.5rem;
     font-size: 12px;
     padding-top: 0px;
   }
@@ -281,7 +281,7 @@ nav .nav_a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 4rem;
   }
   #Home1 .card1 h4 {
     font-size: 28px;
@@ -346,7 +346,10 @@ nav .nav_a {
     border-radius: 20px;
   }
   #Contact .links_1 {
+    display: flex;
+    flex-direction: column;
     padding-top: 30px;
+    gap: 1rem;
   }
   #Contact .contact_me {
     padding: 5px;
