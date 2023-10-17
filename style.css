@@ -6,7 +6,7 @@
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   background: linear-gradient(to right, #0A2647, #144272);
 }
 body a {
@@ -51,7 +51,6 @@ nav .nav_a {
   display: flex;
   gap: 3rem;
   width: 90%;
-  height: 80%;
   margin-top: 10px;
   align-items: center;
   justify-content: center;
@@ -296,7 +295,6 @@ nav .nav_a {
 }
 #Contact {
   width: 80%;
-  height: 100%;
   padding: 20px;
   margin-top: 50px;
   margin-left: 130px;
@@ -334,7 +332,6 @@ nav .nav_a {
 @media (max-width: 478px) {
   #Contact {
     width: 100%;
-    height: 100%;
     padding: 20px;
     margin-top: 0px;
     margin-left: 0px;
@@ -458,16 +455,19 @@ nav .nav_a {
   #project {
     display: flex;
     flex-direction: column;
+    height: 100%;
   }
   #project .first_card {
     display: grid;
     padding: 0rem;
+    height: 50%;
     place-items: center;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   }
   #project .second_card {
     display: grid;
     padding: 0rem;
+    height: 50%;
     place-items: center;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   }

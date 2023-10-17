@@ -15,9 +15,8 @@ $darkcolor2:#144272;
   font-family: "Poppins", sans-serif;
 }
 body{
-
-  height:100vh;
-   background: linear-gradient(to right,#0A2647,#144272);
+  height:100%;
+  background: linear-gradient(to right,#0A2647,#144272);
   a{
     text-decoration: none;
   }  
@@ -81,7 +80,7 @@ nav {
   display: flex;
   gap: 3rem;
   width: 90%;
-  height: 80%;
+  // height: 80%;
   // padding: 20px;
   margin-top: 10px;
   align-items: center;
@@ -378,7 +377,7 @@ nav {
 
 #Contact {
   width: 80%;
-  height: 100%;
+  // height: 100%;
   padding: 20px;
   margin-top: 50px;
   margin-left: 130px;
@@ -418,7 +417,7 @@ nav {
   #Contact{
     
     width: 100%;
-    height: 100%;
+    // height: 100%;
     padding: 20px;
     margin-top: 0px;
     margin-left: 0px;
@@ -555,10 +554,11 @@ nav {
   #project {
     display: flex;
     flex-direction: column;
-  
+  height: 100%;
     .first_card{
       display: grid;
       padding: 0rem;
+      height: 50%;
       place-items: center;
       grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
       
@@ -567,6 +567,7 @@ nav {
     .second_card{    
     display: grid;
     padding: 0rem;
+    height: 50%;
     place-items: center;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     }
