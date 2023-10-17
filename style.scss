@@ -1,8 +1,13 @@
 $othercolor: gold;
 $secondarycolor: white;
 $primarycolor: black;
+$darkcolor:#0A2647;
+$darkcolor2:#144272;
 
-
+.dark-theme{
+  $primary:black;
+  $secondary:white;
+}
 * {
   margin: 0;
   padding: 0;
@@ -12,14 +17,13 @@ $primarycolor: black;
 body{
 
   height:100vh;
- 
    background: linear-gradient(to right,#0A2647,#144272);
+  a{
+    text-decoration: none;
+  }  
 }
 
-.dark-theme{
-  --primary:#0f172a;
-  --secondary:#f97316;
-}
+
 html {
   scroll-behavior: smooth;
 }
@@ -32,17 +36,44 @@ nav {
     text-decoration: none;
     color:$secondarycolor;
   }
+  
 }
+.nav1{
+  display: none;
+}
+
+ 
+
+// @media (max-width: px){
+//   nav {
+//     padding-left: 20%;
+//     // padding-top: 10px;
+  
+//     .nav_a {
+//       font-size: 10px;
+//       padding-right: 2px;
+//     }
+//   }
+// }
 @media (max-width: 478px){
   nav {
-    padding-left: 20%;
+    // padding-left: 20%;
     // padding-top: 10px;
-  
+    // .nav_a {
+    //   font-size: 10px;
+    //   padding-right: 2px;
+    // }
+  display: none;
+    }
+    .nav1{
+      display: block;
+       padding-left: 20%;
+    padding-top: 10px;
     .nav_a {
       font-size: 10px;
       padding-right: 2px;
     }
-  }
+    }
 }
 #Home{
   display: flex;
@@ -54,7 +85,6 @@ nav {
   align-items: center;
   justify-content: center;
   margin-left: 50px;
-
   // background: linear-gradient(to right,#E55604,#E55604);
 
 .card1 {
@@ -63,6 +93,107 @@ nav {
   padding: 30px;
   color: $secondarycolor;
   margin-left: 40px;
+  border-radius: 20px;
+  background-color: $primarycolor;
+  border: 1px solid $secondarycolor;
+
+  .skills {
+    display: flex;
+    padding-top: 40px;
+    flex-direction: column;
+  }
+  .contact_me {
+    padding: 8px;
+    width: 130px;
+    border-radius: 20px;
+    
+  }
+  
+  .skills_1 {
+    gap: 2rem;
+    display: flex;
+    font-size: 15px;
+    padding-top: 10px;
+    
+  }
+  .front_end {
+    font-size: 35px;
+    padding-top: 20px;
+    color: $secondarycolor;
+  }
+  .profile {
+    font-size: 15px;
+    padding-top: 20px;
+  }
+  .links {
+    display:flex;
+
+    font-size: 25px;
+    padding-top: 30px;
+
+   
+  }
+  .links a {
+    width: 25px;
+    padding: 10px;
+    color: $secondarycolor;
+    font-size: 18px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: 1px solid $secondarycolor;
+    background-color: $primarycolor;
+  }
+  h4 {
+    font-size: 13px;
+    color: $secondarycolor;
+  }
+  h1 {
+    color: $secondarycolor;
+  }
+}
+  .card2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //  gap:4rem;
+    width: 40%;
+    height: 50%;
+    border-radius: 20px;
+    object-fit: cover;
+    overflow: hidden;
+    border: 1px solid $primarycolor;
+  
+    .mine {
+      width: 100%;
+      height: 100%;
+    }
+  
+  }
+}
+
+// #Home1{
+//   display:none
+// }
+#Home1{
+  display: flex;
+  display: none;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+  height: 100%;
+  // padding: 20px;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+  // background: linear-gradient(to right,#E55604,#E55604);
+
+.card1 {
+  width: 60%;
+  height: 60%;
+  padding: 30px;
+  color: $secondarycolor;
+  // margin-left: 40px;
   border-radius: 20px;
   background-color: $primarycolor;
   border: 1px solid $secondarycolor;
@@ -127,8 +258,8 @@ nav {
     justify-content: center;
      gap:4rem;
     width: 40%;
-    height: 90%;
-    border-radius: 20px;
+    height: 40%;
+    border-radius: 50%;
       object-fit: cover;
       overflow: hidden;
       border: 1px solid $primarycolor;
@@ -137,317 +268,47 @@ nav {
       width: 100%;
       height: 100%;
     }
-  
+    
   }
-
+}
+@media (max-width:1059px){
 }
 
-@media (max-width: 650px){
-  #Home{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
-    height: 80%;
-    // padding: 20px;
-    margin-top: 1px;
-    align-items: center;
-    justify-content: center;
-    margin-left: 0px;
-  
-  .card1 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 60%;
-    padding: 20px;
-    margin-left: 0px;
-     align-items: center;
-     justify-content: center;
-  .skills h4{
-    font-size: 15px;
-  }
-  
-    .skills {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding-top: 10px;
-    
-    }
-    .contact_me {
-      padding: 3px;
-      width: 100px; 
-      font-size: 15px;
-    }
-    
-    .skills_1 {
-      gap: 2rem;
-      font-size: 10px;
-      padding-top: 0px;
-      
-    }
-    .front_end {
-      font-size:20px;
-      padding-top: 2px;
-      
-    }
-    .profile {
-      font-size: 15px;
-      padding-top: 2px;
-    }
-    .links {
-      display: flex;
-      flex-direction: column;
-      padding-top: 1px;
-      align-items: center;
-      justify-content: center;
-     
-    }
-    .links a {
-      
-      width: 30px;
-      padding: 5px;
-     font-size: 16px;
-      margin-left: 0px;
-      
-  }
-  .links_a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap:2rem;
-  }
-     h4 {
-      font-size: 28px;
-      
-    }
-    h1 {
-      font-size: 25px;
-    }
-  }
-  
-    .card2 {
-     
-      width: 100%;
-      height: 40%;
-    }   
-  } 
-}
 @media (max-width: 980px){
-#Home{
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 100%;
-  height: 80%;
-  // padding: 20px;
-  margin-top: 1px;
-  align-items: center;
-  justify-content: center;
-  margin-left: 0px;
-
-.card1 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 60%;
-  padding: 20px;
-  margin-left: 0px;
-   align-items: center;
-   justify-content: center;
-.skills h4{
-  font-size: 15px;
 }
 
-  .skills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10px;
-  
-  }
-  .contact_me {
-    padding: 3px;
-    width: 100px; 
-    font-size: 15px;
-  }
-  
-  .skills_1 {
-    gap: 2rem;
-    font-size: 10px;
-    padding-top: 0px;
-    
-  }
-  .front_end {
-    font-size:20px;
-    padding-top: 2px;
-    
-  }
-  .profile {
-    font-size: 15px;
-    padding-top: 2px;
-  }
-  .links {
-    display: flex;
-    flex-direction: column;
-    padding-top: 1px;
-    align-items: center;
-    justify-content: center;
-   
-  }
-  .links a {
-    
-    width: 30px;
-    padding: 5px;
-   font-size: 16px;
-    margin-left: 0px;
-    
-}
-.links_a{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap:2rem;
-}
-   h4 {
-    font-size: 28px;
-    
-  }
-  h1 {
-    font-size: 25px;
-  }
-}
-
-  .card2 {
-   
-    width: 100%;
-    height: 40%;
-  }   
-} 
-}
 
 @media (max-width: 790px){
-  #Home{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
-    height: 80%;
-    // padding: 20px;
-    margin-top: 1px;
-    align-items: center;
-    justify-content: center;
-    margin-left: 0px;
-  
-  .card1 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 60%;
-    padding: 20px;
-    margin-left: 0px;
-     align-items: center;
-     justify-content: center;
-  .skills h4{
-    font-size: 15px;
-  }
-  
-    .skills {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding-top: 10px;
-    
-    }
-    .contact_me {
-      padding: 3px;
-      width: 100px; 
-      font-size: 15px;
-    }
-    
-    .skills_1 {
-      gap: 2rem;
-      font-size: 10px;
-      padding-top: 0px;
-      
-    }
-    .front_end {
-      font-size:20px;
-      padding-top: 2px;
-      
-    }
-    .profile {
-      font-size: 15px;
-      padding-top: 2px;
-    }
-    .links {
-      display: flex;
-      flex-direction: column;
-      padding-top: 1px;
-      align-items: center;
-      justify-content: center;
-     
-    }
-    .links a {
-      
-      width: 30px;
-      padding: 5px;
-     font-size: 16px;
-      margin-left: 0px;
-      
-  }
-  .links_a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap:2rem;
-  }
-     h4 {
-      font-size: 28px;
-      
-    }
-    h1 {
-      font-size: 25px;
-    }
-  }
-  
-    .card2 {
-     
-      width: 100%;
-      height: 40%;
-    }   
-  } 
 }
-
 
 @media (max-width: 478px){
   #Home{
+    display: none;
+  }
+  #Home1{
+    display: block;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     width: 100%;
-    height: 80%;
+    height: 100%;
     // padding: 20px;
     margin-top: 1px;
     align-items: center;
     justify-content: center;
     margin-left: 0px;
-  
+    
   .card1 {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 50%;
     height: 60%;
     padding: 20px;
     margin-left: 0px;
      align-items: center;
      justify-content: center;
   .skills h4{
-    font-size: 15px;
+    font-size: 13px;
   }
   
     .skills {
@@ -459,9 +320,9 @@ nav {
     
     }
     .contact_me {
-      padding: 3px;
-      width: 100px; 
-      font-size: 15px;
+      padding: 2px;
+      width: 60px; 
+      font-size: 10px;
     }
     
     .skills_1 {
@@ -471,7 +332,7 @@ nav {
       
     }
     .front_end {
-      font-size:20px;
+      font-size:15px;
       padding-top: 2px;
       
     }
@@ -489,7 +350,7 @@ nav {
     }
     .links a {
       
-      width: 30px;
+      width: 25px;
       padding: 5px;
      font-size: 16px;
       margin-left: 0px;
@@ -497,6 +358,7 @@ nav {
   }
   .links_a{
     display: flex;
+   
     align-items: center;
     justify-content: center;
     gap:2rem;
@@ -506,14 +368,15 @@ nav {
       
     }
     h1 {
-      font-size: 25px;
+      font-size: 15px;
     }
   }
   
     .card2 {
      
-      width: 100%;
+      width: 50%;
       height: 40%;
+      border-radius: 50%;
     }   
   } 
 }
@@ -558,7 +421,8 @@ nav {
 }
 @media (max-width: 478px){
   #Contact{
-    width: 95%;
+    
+    width: 50%;
     height: 20%;
     padding: 20px;
     margin-top: 10px;
@@ -755,8 +619,6 @@ nav {
       a {
         font-size: 30px;
         
-      }
-     
-    
+      }  
   }
 }
