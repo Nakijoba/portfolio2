@@ -266,10 +266,10 @@ nav .nav_a {
   #Home1 .card1 .links {
     display: flex;
     flex-direction: column;
-    padding-top: 10px;
+    padding-top: 20px;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
   }
   #Home1 .card1 .links a {
     display: flex;
@@ -278,8 +278,8 @@ nav .nav_a {
     width: 40px;
     padding: 10px;
     font-size: 16px;
-    border-radius: 50px;
-    margin-left: 20px;
+    border-radius: 30px;
+    margin-left: 30px;
   }
   #Home1 .card1 .links_a {
     display: flex;
@@ -324,26 +324,14 @@ nav .nav_a {
   border-radius: 20px;
 }
 #Contact .linksa {
-  display: flex;
-  gap: 2rem;
   color: white;
-}
-#Contact .link {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
 }
 #Contact .linksa a {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 30px;
   padding: 10px;
   color: white;
   font-size: 15px;
-  margin-top: 15px;
-  border-radius: 40%;
   border: 1px solid white;
   background-color: black;
 }
@@ -381,7 +369,15 @@ nav .nav_a {
     gap: 1rem;
   }
   #Contact1 .linksa {
+    display: flex;
+    flex-direction: column;
     color: white;
+    gap: 2rem;
+  }
+  #Contact1 .link {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
   }
   #Contact1 .contact_me {
     padding: 5px;
@@ -389,14 +385,14 @@ nav .nav_a {
     border-radius: 20px;
   }
   #Contact1 .linksa a {
+    display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
-    width: 50px;
-    font-size: 30px;
-    margin-top: 20px;
-    border-radius: 50px;
+    width: 30px;
+    font-size: 20px;
     color: white;
+    border-radius: 30%;
     border: 1px solid white;
     background-color: black;
   }
