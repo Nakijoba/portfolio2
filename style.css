@@ -251,7 +251,7 @@ nav .nav_a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 15px;
+    gap: 2.5rem;
     font-size: 12px;
     padding-top: 0px;
   }
@@ -372,7 +372,7 @@ nav .nav_a {
     display: flex;
     flex-direction: column;
     color: white;
-    gap: 2rem;
+    gap: 4rem;
   }
   #Contact1 .link {
     display: flex;
