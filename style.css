@@ -38,10 +38,61 @@ nav .nav_a {
   display: none;
 }
 
-@media (max-width: 478px) {
+@media (max-width: 1059px) {
   nav {
     display: none;
   }
+  .nav1 {
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    display: block;
+    height: 50px;
+    padding-left: 75%;
+    padding-top: 10px;
+    background-color: black;
+  }
+  .nav1 .nav_a {
+    font-size: 13px;
+    padding-right: 2px;
+    color: white;
+  }
+  .nav1 button {
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    color: white;
+    padding: 13px;
+    transition: all 0.5s;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+  }
+  .nav1 button i {
+    font-size: 30px;
+  }
+  .nav1 button .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+    transition: all 0.5s;
+  }
+  .nav1 button .menu a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    transition: all 0.5s;
+  }
+  .nav1 button .menu a:hover {
+    background-color: black;
+  }
+  .nav1 button:hover .menu {
+    display: block;
+  }
+}
+@media (max-width: 478px) {
   .nav1 {
     position: fixed;
     top: 0%;
