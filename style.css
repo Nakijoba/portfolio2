@@ -102,7 +102,7 @@ nav .nav_a {
   color: white;
   font-size: 18px;
   margin-left: 20px;
-  border-radius: 10px;
+  border-radius: 50%;
   border: 1px solid white;
   background-color: black;
 }
@@ -116,7 +116,6 @@ nav .nav_a {
 #Home .card2 {
   width: 40%;
   height: 60%;
-  border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
@@ -138,7 +137,6 @@ nav .nav_a {
   margin-top: 10px;
   align-items: center;
   justify-content: center;
-  margin-left: 50px;
 }
 #Home1 .card1 {
   width: 60%;
@@ -182,7 +180,6 @@ nav .nav_a {
   padding: 10px;
   color: white;
   font-size: 18px;
-  margin-left: 20px;
   border-radius: 10px;
   border: 1px solid white;
   background-color: black;
@@ -251,6 +248,9 @@ nav .nav_a {
     font-size: 10px;
   }
   #Home1 .card1 .skills_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 2.5rem;
     font-size: 12px;
     padding-top: 0px;
@@ -272,16 +272,19 @@ nav .nav_a {
     gap: 1rem;
   }
   #Home1 .card1 .links a {
-    width: 25px;
-    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    padding: 10px;
     font-size: 16px;
-    margin-left: 0px;
+    border-radius: 50px;
+    margin-left: 20px;
   }
   #Home1 .card1 .links_a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
   }
   #Home1 .card1 h4 {
     font-size: 28px;
@@ -311,6 +314,8 @@ nav .nav_a {
   border: 1px solid white;
 }
 #Contact .links_1 {
+  display: flex;
+  flex-direction: column;
   padding-top: 100px;
 }
 #Contact .contact_me {
@@ -318,13 +323,27 @@ nav .nav_a {
   width: 130px;
   border-radius: 20px;
 }
-#Contact .links_1 a {
-  width: 15px;
-  padding: 5px;
+#Contact .linksa {
+  display: flex;
+  gap: 2rem;
+  color: white;
+}
+#Contact .link {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+#Contact .linksa a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  padding: 10px;
   color: white;
   font-size: 15px;
-  margin-left: 15px;
-  border-radius: 10px;
+  margin-top: 15px;
+  border-radius: 40%;
   border: 1px solid white;
   background-color: black;
 }
@@ -337,36 +356,57 @@ nav .nav_a {
   color: white;
 }
 
+#Contact1 {
+  display: none;
+}
+
 @media (max-width: 478px) {
   #Contact {
+    display: none;
+  }
+  #Contact1 {
+    display: block;
     width: 100%;
     padding: 20px;
     margin-top: 0px;
     margin-left: 0px;
     border-radius: 20px;
+    background-color: black;
+    border: 1px solid white;
   }
-  #Contact .links_1 {
+  #Contact1 .links_1 {
     display: flex;
     flex-direction: column;
     padding-top: 30px;
     gap: 1rem;
   }
-  #Contact .contact_me {
+  #Contact1 .linksa {
+    color: white;
+  }
+  #Contact1 .contact_me {
     padding: 5px;
     width: 100px;
     border-radius: 20px;
   }
-  #Contact .links_1 a {
-    width: 20px;
-    padding: 5px;
-    font-size: 12px;
-    margin-left: 12px;
+  #Contact1 .linksa a {
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 50px;
+    font-size: 30px;
+    margin-top: 20px;
+    border-radius: 50px;
+    color: white;
+    border: 1px solid white;
+    background-color: black;
   }
-  #Contact h1 {
+  #Contact1 h1 {
     font-size: 20px;
+    color: white;
   }
-  #Contact p {
+  #Contact1 p {
     font-size: 13px;
+    color: white;
   }
 }
 #project {
