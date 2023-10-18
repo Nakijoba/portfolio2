@@ -396,6 +396,7 @@ nav {
     display: flex;
     flex-direction: column;
     padding-top: 100px;
+    gap:2rem;
   }
   .contact_me {
     padding: 5px;
@@ -403,8 +404,10 @@ nav {
     border-radius: 20px;
   }
   .linksa{
+    display: flex;
+    align-items: center;
     color:white;
-    
+    gap:2rem;
   }
   // .link{
   //   display: flex;
@@ -413,10 +416,13 @@ nav {
   // }
   .linksa a{
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 30px;
     padding: 10px;
     color: $secondarycolor;
     font-size: 15px;
+    border-radius: 40%;
     border: 1px solid $secondarycolor;
     background-color: $primarycolor;
   }
@@ -468,7 +474,7 @@ nav {
     display: flex;
     flex-direction: column;
     color:white;
-    gap:4rem;
+    gap:3rem;
   }
   .link{
     display: flex;
@@ -491,6 +497,7 @@ nav {
     border-radius: 30%;
     border: 1px solid $secondarycolor;
     background-color: $primarycolor;
+ 
   }
   h1 {
     

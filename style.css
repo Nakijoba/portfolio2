@@ -317,6 +317,7 @@ nav .nav_a {
   display: flex;
   flex-direction: column;
   padding-top: 100px;
+  gap: 2rem;
 }
 #Contact .contact_me {
   padding: 5px;
@@ -324,14 +325,20 @@ nav .nav_a {
   border-radius: 20px;
 }
 #Contact .linksa {
+  display: flex;
+  align-items: center;
   color: white;
+  gap: 2rem;
 }
 #Contact .linksa a {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 30px;
   padding: 10px;
   color: white;
   font-size: 15px;
+  border-radius: 40%;
   border: 1px solid white;
   background-color: black;
 }
@@ -372,7 +379,7 @@ nav .nav_a {
     display: flex;
     flex-direction: column;
     color: white;
-    gap: 4rem;
+    gap: 3rem;
   }
   #Contact1 .link {
     display: flex;
