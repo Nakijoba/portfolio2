@@ -4,10 +4,7 @@ $primarycolor: black;
 $darkcolor:#0A2647;
 $darkcolor2:#144272;
 
-.dark-theme{
-  $primary:black;
-  $secondary:white;
-}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +14,7 @@ $darkcolor2:#144272;
 body{
   height:100%;
   background: linear-gradient(to right,#0A2647,#144272);
+ 
   a{
     text-decoration: none;
   }  
@@ -29,11 +27,19 @@ html {
 nav {
   padding-left: 80%;
   padding-top: 10px;
+  position: fixed;
+  left:0%;
+  Top:0%;
+  height: 50px;
+  width: 100%;
+  background-color: black;
+ 
   .nav_a {
     font-size: 15px;
     padding-right: 25px;
     text-decoration: none;
     color:$secondarycolor;
+  
   }
   
 }
@@ -43,38 +49,68 @@ nav {
 
  
 
-// @media (max-width: px){
-//   nav {
-//     padding-left: 20%;
-//     // padding-top: 10px;
-  
-//     .nav_a {
-//       font-size: 10px;
-//       padding-right: 2px;
-//     }
-//   }
-// }
+
 @media (max-width: 478px){
   nav {
-    // padding-left: 20%;
-    // padding-top: 10px;
-    // .nav_a {
-    //   font-size: 10px;
-    //   padding-right: 2px;
-    // }
+    
   display: none;
     }
     .nav1{
-      
+      position: fixed;
+      top:0%;
        display: block;
-       padding-left: 50%;
+       height: 50px;
+       padding-left: 75%;
        padding-top: 10px;
+       background-color: black;
+      //  height: 60px;
     .nav_a {
       font-size: 13px;
       padding-right: 2px;
        color: white;
     }
+    button {
+      display: inline-block;
+      position: relative;
+      background-color: transparent;
+      color: white;
+      padding: 13px;
+      transition: all 0.5s;
+      border: none;
+      cursor: pointer;
+      width:100px;
+     
+      i{
+        font-size: 30px;
+        
+      }
+      .menu {
+        position: absolute;
+        
+        // background-color: aqua;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        display: none;
+        transition: all 0.5s;
+        a {
+          display: block;
+          padding: 1rem;
+          // background-color: black;
+          color: white;
+          transition: all 0.5s;
+          &:hover {
+            background-color: black;
+          }
+        }
+      }
+      &:hover {
+        .menu {
+          display: block;
+        }
+      }
     }
+}
 }
 #Home{
   display: flex;
@@ -82,7 +118,7 @@ nav {
   width: 90%;
   // height: 80%;
   // padding: 20px;
-  margin-top: 10px;
+  margin-top: 100px;
   align-items: center;
   justify-content: center;
   margin-left: 50px;
@@ -181,11 +217,11 @@ nav {
   display: flex;
   display: none;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
   width: 100%;
   height: 100%;
   padding: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
   align-items: center;
   justify-content: center;
   // margin-left: 50px;
@@ -193,10 +229,10 @@ nav {
 
 .card1 {
   width: 60%;
-  height: 60%;
+  height: 65%;
   padding: 30px;
   color: $secondarycolor;
-  // margin-left: 40px;
+  // margin-top: 40px;
   border-radius: 20px;
   // background-color: $primarycolor;
   // border: 1px solid $secondarycolor;
@@ -214,11 +250,16 @@ nav {
   }
   
   .skills_1 {
-    gap: 2rem;
     display: flex;
     font-size: 15px;
     padding-top: 10px;
-    
+   
+
+  }
+  .skill{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
   }
   .front_end {
     font-size: 35px;
@@ -246,10 +287,10 @@ nav {
   }
   h4 {
     font-size: 13px;
-    color: #E9B824;
+    color: orange;
   }
   h1 {
-    color: #E9B824;
+    color: orange;
   }
 }
 .card2 {
@@ -257,9 +298,10 @@ nav {
   align-items: center;
   justify-content: center;
   width: 40%;
-  height: 40%;
+  height: 35%;
   // border-radius: 20px;
   // object-fit: co;
+ 
   overflow: hidden;
   border: 1px solid ;
   border-radius: 30px;
@@ -364,13 +406,13 @@ nav {
       
     }
     h1 {
-      font-size: 15px;
-      color:#E9B824;
+      font-size: 12px;
+      color:orange;
     }
   }
   
     .card2 {
-     
+    
       width: 60%;
       height: 40%;
       border-radius: 50%;
@@ -569,7 +611,7 @@ nav {
     width: 100%;
     height: 100%;
     // padding: 20px;
-    margin-top: 1px;
+    margin-top: 50px;
     margin-left: 0px;
     
   .card1 {
@@ -596,8 +638,8 @@ nav {
     
     .skills_1 {
       
-      gap: 2.5rem;
-      font-size: 12px;
+      justify-content: space-between;
+      font-size: 16px;
       padding-top: 0px;
       
     }
@@ -607,22 +649,23 @@ nav {
       
     }
     .profile {
-      font-size: 15px;
+      font-size: 12px;
       padding-top: 2px;
+    }
+    .links_a{
+      gap:0.5rem;
     }
     .links {
     
       padding-top: 20px;
-      
-      gap: 1.5rem;
+       gap: 1.5rem;
     }
     .links a {
-     
-      width: 40px;
-      padding: 10px;
-     font-size: 16px;
-     border-radius: 30%;
-     margin-left: 20px; 
+    
+    padding: 10px;
+    width: 35px;
+    font-size: 20px;
+    border-radius: 50px;
   }
   
      h4 {
@@ -650,13 +693,14 @@ nav {
 }
 
 #Contact {
-  width: 100%;
+  width: 95%;
   // height: 100%;
   padding: 20px;
+  margin-left: 25px;
   margin-top: 50px;
-  border-radius: 20px;
+  // border-radius: 20px;
   background-color: $primarycolor;
-  border: 1px solid $secondarycolor;
+  // border: 1px solid $secondarycolor;
 
   .links_1 {
     display: flex;
@@ -722,14 +766,12 @@ nav {
 
   #Contact1{
     display: block;
-    width: 100%;
-    // height: 100%;
+    width: 80%;
     padding: 20px;
-    margin-top: 0px;
-    margin-left: 0px;
-    border-radius: 20px;
+    // margin-bottom: 10px;
+    margin-left: 40px;
     background-color: $primarycolor;
-    border: 1px solid $secondarycolor;
+    // border: 1px solid $secondarycolor;
   .links_1 {
    display: flex;
    flex-direction: column;
@@ -746,7 +788,7 @@ nav {
   .link{
     display: flex;
     align-items: center;
-    gap:3rem;
+    gap:1rem;
   }
   .contact_me {
     padding: 5px;
@@ -757,11 +799,11 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center; 
-    padding: 10px;
-    width: 30px;
-    font-size: 20px;
     color: $secondarycolor;
-    border-radius: 30%;
+    padding: 10px;
+    width: 35px;
+    font-size: 20px;
+    border-radius: 50px;
     border: 1px solid $secondarycolor;
     background-color: $primarycolor;
  
@@ -804,9 +846,9 @@ nav {
     height: 90%;
     width:90%;
     overflow: hidden;
-    border-radius: 20px;
+    // border-radius: 20px;
     background-color: $primarycolor;
-    border: 1px solid $secondarycolor;
+    // border: 1px solid $secondarycolor;
   
   }
   
@@ -818,9 +860,9 @@ nav {
     height: 90%;
     width:90%;
     overflow: hidden;
-    border-radius: 20px;
+    // border-radius: 20px;
     background-color: $primarycolor;
-    border: 1px solid $secondarycolor;
+    // border: 1px solid $secondarycolor;
   
   }
   .card3_project{
@@ -831,9 +873,9 @@ nav {
     height: 90%;
     width:90%;
     overflow: hidden;
-    border-radius: 20px;
+    // border-radius: 20px;
     background-color: $primarycolor;
-    border: 1px solid $secondarycolor;
+    // border: 1px solid $secondarycolor;
   }
   .card4_project {
     display:flex;
@@ -843,9 +885,9 @@ nav {
     height: 90%;
     width:90%;
     overflow: hidden;
-    border-radius: 20px;
+    // border-radius: 20px;
     background-color:$primarycolor;
-    border: 1px solid $secondarycolor;
+    // border: 1px solid$;
   }
     .title {
       padding: 15px;
@@ -909,7 +951,7 @@ nav {
     .card1_project{
       
       height: 95%;
-      width:100%;
+      width:80%;
       
     
     }
@@ -917,7 +959,7 @@ nav {
     .card2_project{
       
       height: 95%;
-      width:100%;
+      width:80%;
       
      
     
@@ -925,14 +967,14 @@ nav {
     .card3_project{
      
       height: 95%;
-      width:100%;
+      width:80%;
       
       
     }
     .card4_project {
       
       height: 95%;
-      width:100%;
+      width:80%;
       
       
     }

@@ -20,6 +20,12 @@ html {
 nav {
   padding-left: 80%;
   padding-top: 10px;
+  position: fixed;
+  left: 0%;
+  Top: 0%;
+  height: 50px;
+  width: 100%;
+  background-color: black;
 }
 nav .nav_a {
   font-size: 15px;
@@ -37,21 +43,59 @@ nav .nav_a {
     display: none;
   }
   .nav1 {
+    position: fixed;
+    top: 0%;
     display: block;
-    padding-left: 50%;
+    height: 50px;
+    padding-left: 75%;
     padding-top: 10px;
+    background-color: black;
   }
   .nav1 .nav_a {
     font-size: 13px;
     padding-right: 2px;
     color: white;
   }
+  .nav1 button {
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    color: white;
+    padding: 13px;
+    transition: all 0.5s;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+  }
+  .nav1 button i {
+    font-size: 30px;
+  }
+  .nav1 button .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+    transition: all 0.5s;
+  }
+  .nav1 button .menu a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    transition: all 0.5s;
+  }
+  .nav1 button .menu a:hover {
+    background-color: black;
+  }
+  .nav1 button:hover .menu {
+    display: block;
+  }
 }
 #Home {
   display: flex;
   gap: 3rem;
   width: 90%;
-  margin-top: 10px;
+  margin-top: 100px;
   align-items: center;
   justify-content: center;
   margin-left: 50px;
@@ -132,17 +176,17 @@ nav .nav_a {
   display: flex;
   display: none;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
   width: 100%;
   height: 100%;
   padding: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
   align-items: center;
   justify-content: center;
 }
 #Home1 .card1 {
   width: 60%;
-  height: 60%;
+  height: 65%;
   padding: 30px;
   color: white;
   border-radius: 20px;
@@ -158,10 +202,14 @@ nav .nav_a {
   border-radius: 20px;
 }
 #Home1 .card1 .skills_1 {
-  gap: 2rem;
   display: flex;
   font-size: 15px;
   padding-top: 10px;
+}
+#Home1 .card1 .skill {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 #Home1 .card1 .front_end {
   font-size: 35px;
@@ -188,17 +236,17 @@ nav .nav_a {
 }
 #Home1 .card1 h4 {
   font-size: 13px;
-  color: #E9B824;
+  color: orange;
 }
 #Home1 .card1 h1 {
-  color: #E9B824;
+  color: orange;
 }
 #Home1 .card2 {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 40%;
-  height: 40%;
+  height: 35%;
   overflow: hidden;
   border: 1px solid;
   border-radius: 30px;
@@ -293,8 +341,8 @@ nav .nav_a {
     font-size: 28px;
   }
   #Home1 .card1 h1 {
-    font-size: 15px;
-    color: #E9B824;
+    font-size: 12px;
+    color: orange;
   }
   #Home1 .card2 {
     width: 60%;
@@ -449,7 +497,7 @@ nav .nav_a {
     gap: 1rem;
     width: 100%;
     height: 100%;
-    margin-top: 1px;
+    margin-top: 50px;
     margin-left: 0px;
   }
   #Home1 .card1 {
@@ -471,8 +519,8 @@ nav .nav_a {
     font-size: 10px;
   }
   #Home1 .card1 .skills_1 {
-    gap: 2.5rem;
-    font-size: 12px;
+    justify-content: space-between;
+    font-size: 16px;
     padding-top: 0px;
   }
   #Home1 .card1 .front_end {
@@ -480,19 +528,21 @@ nav .nav_a {
     padding-top: 2px;
   }
   #Home1 .card1 .profile {
-    font-size: 15px;
+    font-size: 12px;
     padding-top: 2px;
+  }
+  #Home1 .card1 .links_a {
+    gap: 0.5rem;
   }
   #Home1 .card1 .links {
     padding-top: 20px;
     gap: 1.5rem;
   }
   #Home1 .card1 .links a {
-    width: 40px;
     padding: 10px;
-    font-size: 16px;
-    border-radius: 30%;
-    margin-left: 20px;
+    width: 35px;
+    font-size: 20px;
+    border-radius: 50px;
   }
   #Home1 .card1 h4 {
     font-size: 28px;
@@ -513,12 +563,11 @@ nav .nav_a {
   }
 }
 #Contact {
-  width: 100%;
+  width: 95%;
   padding: 20px;
+  margin-left: 25px;
   margin-top: 50px;
-  border-radius: 20px;
   background-color: black;
-  border: 1px solid white;
 }
 #Contact .links_1 {
   display: flex;
@@ -568,13 +617,10 @@ nav .nav_a {
   }
   #Contact1 {
     display: block;
-    width: 100%;
+    width: 80%;
     padding: 20px;
-    margin-top: 0px;
-    margin-left: 0px;
-    border-radius: 20px;
+    margin-left: 40px;
     background-color: black;
-    border: 1px solid white;
   }
   #Contact1 .links_1 {
     display: flex;
@@ -591,7 +637,7 @@ nav .nav_a {
   #Contact1 .link {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 1rem;
   }
   #Contact1 .contact_me {
     padding: 5px;
@@ -602,11 +648,11 @@ nav .nav_a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-    width: 30px;
-    font-size: 20px;
     color: white;
-    border-radius: 30%;
+    padding: 10px;
+    width: 35px;
+    font-size: 20px;
+    border-radius: 50px;
     border: 1px solid white;
     background-color: black;
   }
@@ -643,9 +689,7 @@ nav .nav_a {
   height: 90%;
   width: 90%;
   overflow: hidden;
-  border-radius: 20px;
   background-color: black;
-  border: 1px solid white;
 }
 #project .card2_project {
   display: flex;
@@ -655,9 +699,7 @@ nav .nav_a {
   height: 90%;
   width: 90%;
   overflow: hidden;
-  border-radius: 20px;
   background-color: black;
-  border: 1px solid white;
 }
 #project .card3_project {
   display: flex;
@@ -667,9 +709,7 @@ nav .nav_a {
   height: 90%;
   width: 90%;
   overflow: hidden;
-  border-radius: 20px;
   background-color: black;
-  border: 1px solid white;
 }
 #project .card4_project {
   display: flex;
@@ -679,9 +719,7 @@ nav .nav_a {
   height: 90%;
   width: 90%;
   overflow: hidden;
-  border-radius: 20px;
   background-color: black;
-  border: 1px solid white;
 }
 #project .title {
   padding: 15px;
@@ -734,19 +772,19 @@ nav .nav_a {
   }
   #project .card1_project {
     height: 95%;
-    width: 100%;
+    width: 80%;
   }
   #project .card2_project {
     height: 95%;
-    width: 100%;
+    width: 80%;
   }
   #project .card3_project {
     height: 95%;
-    width: 100%;
+    width: 80%;
   }
   #project .card4_project {
     height: 95%;
-    width: 100%;
+    width: 80%;
   }
   #project .title {
     padding: 10px;
