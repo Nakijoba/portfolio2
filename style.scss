@@ -706,17 +706,17 @@ nav {
  
 }
 }
-@media (max-width: 478px){
+@media (max-width: 650px){
   #Contact{
     display: none;
   }
 
   #Contact1{
     display: block;
-    width: 80%;
+    width: 90%;
     padding: 20px;
-    // margin-bottom: 10px;
-    margin-left: 42px;
+    margin-top: 20px;
+    margin-left: 32px;
     background-color: $primarycolor;
     // border: 1px solid $secondarycolor;
   .links_1 {
@@ -765,6 +765,15 @@ nav {
     color: $secondarycolor;
   }
 }
+}
+
+
+@media (max-width: 478px){
+ 
+  #Contact1{
+    width: 82%;
+    margin-left: 39px;
+  }  
 }
 
 #project {

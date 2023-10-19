@@ -580,15 +580,16 @@ nav .nav_a {
     margin-left: 10px;
   }
 }
-@media (max-width: 478px) {
+@media (max-width: 650px) {
   #Contact {
     display: none;
   }
   #Contact1 {
     display: block;
-    width: 80%;
+    width: 90%;
     padding: 20px;
-    margin-left: 42px;
+    margin-top: 20px;
+    margin-left: 32px;
     background-color: black;
   }
   #Contact1 .links_1 {
@@ -632,6 +633,12 @@ nav .nav_a {
   #Contact1 p {
     font-size: 13px;
     color: white;
+  }
+}
+@media (max-width: 478px) {
+  #Contact1 {
+    width: 82%;
+    margin-left: 39px;
   }
 }
 #project {
