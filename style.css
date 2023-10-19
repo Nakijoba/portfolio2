@@ -586,7 +586,7 @@ nav .nav_a {
   }
   #Contact1 {
     display: block;
-    width: 90%;
+    width: 92%;
     padding: 20px;
     margin-top: 20px;
     margin-left: 32px;
@@ -665,6 +665,7 @@ nav .nav_a {
   height: 90%;
   width: 90%;
   overflow: hidden;
+  border-radius: 10px;
   background-color: black;
 }
 #project .card2_project {
@@ -675,6 +676,7 @@ nav .nav_a {
   height: 90%;
   width: 90%;
   overflow: hidden;
+  border-radius: 10px;
   background-color: black;
 }
 #project .card3_project {
@@ -685,6 +687,7 @@ nav .nav_a {
   height: 90%;
   width: 90%;
   overflow: hidden;
+  border-radius: 10px;
   background-color: black;
 }
 #project .card4_project {
@@ -695,6 +698,7 @@ nav .nav_a {
   height: 90%;
   width: 90%;
   overflow: hidden;
+  border-radius: 10px;
   background-color: black;
 }
 #project .title {
