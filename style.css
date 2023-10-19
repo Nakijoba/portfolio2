@@ -38,7 +38,7 @@ nav .nav_a {
   display: none;
 }
 
-@media (max-width: 1059px) {
+@media (max-width: 980px) {
   nav {
     display: none;
   }
@@ -48,7 +48,7 @@ nav .nav_a {
     top: 0%;
     display: block;
     height: 50px;
-    padding-left: 75%;
+    padding-left: 85%;
     padding-top: 10px;
     background-color: black;
   }
@@ -92,54 +92,14 @@ nav .nav_a {
     display: block;
   }
 }
+@media (max-width: 790px) {
+  .nav1 {
+    padding-left: 80%;
+  }
+}
 @media (max-width: 478px) {
   .nav1 {
-    position: fixed;
-    top: 0%;
-    display: block;
-    height: 50px;
     padding-left: 75%;
-    padding-top: 10px;
-    background-color: black;
-  }
-  .nav1 .nav_a {
-    font-size: 13px;
-    padding-right: 2px;
-    color: white;
-  }
-  .nav1 button {
-    display: inline-block;
-    position: relative;
-    background-color: transparent;
-    color: white;
-    padding: 13px;
-    transition: all 0.5s;
-    border: none;
-    cursor: pointer;
-    width: 100px;
-  }
-  .nav1 button i {
-    font-size: 30px;
-  }
-  .nav1 button .menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    display: none;
-    transition: all 0.5s;
-  }
-  .nav1 button .menu a {
-    display: block;
-    padding: 1rem;
-    color: white;
-    transition: all 0.5s;
-  }
-  .nav1 button .menu a:hover {
-    background-color: black;
-  }
-  .nav1 button:hover .menu {
-    display: block;
   }
 }
 #Home {
@@ -188,22 +148,35 @@ nav .nav_a {
 }
 #Home .card1 .links {
   display: flex;
+  gap: 2rem;
   font-size: 25px;
   padding-top: 30px;
+  align-items: center;
+  justify-content: center;
+}
+#Home .card1 .links_a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
 }
 #Home .card1 .links a {
+  display: flex;
   width: 25px;
   padding: 10px;
   color: white;
-  font-size: 18px;
-  margin-left: 20px;
-  border-radius: 50%;
+  padding: 12px;
+  width: 50px;
+  font-size: 20px;
+  border-radius: 50px;
   border: 1px solid white;
   background-color: black;
+  align-items: center;
+  justify-content: center;
 }
 #Home .card1 h4 {
   font-size: 13px;
-  color: white;
+  color: orange;
 }
 #Home .card1 h1 {
   color: white;
@@ -280,8 +253,10 @@ nav .nav_a {
   width: 25px;
   padding: 10px;
   color: white;
-  font-size: 18px;
-  border-radius: 10px;
+  padding: 10px;
+  width: 40px;
+  font-size: 20px;
+  border-radius: 40px;
   border: 1px solid white;
   background-color: black;
 }
@@ -307,7 +282,7 @@ nav .nav_a {
   height: 100%;
 }
 
-@media (max-width: 1059px) {
+@media (max-width: 980px) {
   #Home {
     display: none;
   }
@@ -318,7 +293,7 @@ nav .nav_a {
     gap: 1rem;
     width: 100%;
     height: 100%;
-    margin-top: 1px;
+    margin-top: 100px;
     align-items: center;
     justify-content: center;
     margin-left: 0px;
@@ -334,7 +309,7 @@ nav .nav_a {
     justify-content: center;
   }
   #Home1 .card1 .skills h4 {
-    font-size: 13px;
+    font-size: 15px;
   }
   #Home1 .card1 .skills {
     display: flex;
@@ -342,28 +317,30 @@ nav .nav_a {
     align-items: center;
     justify-content: center;
     padding-top: 13px;
-    gap: 0.5em;
+    gap: 1em;
   }
   #Home1 .card1 .contact_me {
     padding: 3px;
     width: 100px;
-    font-size: 10px;
+    font-size: 15px;
   }
   #Home1 .card1 .skills_1 {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-    font-size: 12px;
+    gap: 10rem;
+    font-size: 15px;
     padding-top: 0px;
   }
   #Home1 .card1 .front_end {
-    font-size: 15px;
+    font-size: 20px;
     padding-top: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   #Home1 .card1 .profile {
     font-size: 15px;
     padding-top: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   #Home1 .card1 .links {
     display: flex;
@@ -371,100 +348,31 @@ nav .nav_a {
     padding-top: 20px;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
   }
   #Home1 .card1 .links a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
+    width: 45px;
     padding: 10px;
-    font-size: 16px;
-    border-radius: 30%;
+    font-size: 20px;
+    border-radius: 40px;
     margin-left: 20px;
   }
   #Home1 .card1 .links_a {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 3rem;
   }
   #Home1 .card1 h4 {
     font-size: 28px;
   }
   #Home1 .card1 h1 {
-    font-size: 12px;
+    font-size: 15px;
     color: orange;
   }
   #Home1 .card2 {
-    width: 60%;
-    height: 40%;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 5px solid black;
-  }
-  #Home1 .card2 .mine {
-    width: 100%;
-    height: 100%;
-  }
-}
-@media (max-width: 980px) {
-  #Home1 {
-    gap: 1rem;
-    width: 100%;
-    height: 100%;
-    margin-top: 1px;
-    margin-left: 0px;
-  }
-  #Home1 .card1 {
-    width: 100%;
-    height: 60%;
-    padding: 20px;
-    margin-left: 0px;
-  }
-  #Home1 .card1 .skills h4 {
-    font-size: 13px;
-  }
-  #Home1 .card1 .skills {
-    padding-top: 13px;
-    gap: 0.5em;
-  }
-  #Home1 .card1 .contact_me {
-    padding: 3px;
-    width: 100px;
-    font-size: 10px;
-  }
-  #Home1 .card1 .skills_1 {
-    gap: 2.5rem;
-    font-size: 12px;
-    padding-top: 0px;
-  }
-  #Home1 .card1 .front_end {
-    font-size: 15px;
-    padding-top: 2px;
-  }
-  #Home1 .card1 .profile {
-    font-size: 15px;
-    padding-top: 2px;
-  }
-  #Home1 .card1 .links {
-    padding-top: 20px;
-    gap: 1.5rem;
-  }
-  #Home1 .card1 .links a {
-    width: 40px;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 30%;
-    margin-left: 20px;
-  }
-  #Home1 .card1 h4 {
-    font-size: 28px;
-  }
-  #Home1 .card1 h1 {
-    font-size: 15px;
-  }
-  #Home1 .card2 {
-    width: 60%;
+    width: 30%;
     height: 40%;
     border-radius: 50%;
     overflow: hidden;
@@ -480,7 +388,7 @@ nav .nav_a {
     gap: 1rem;
     width: 100%;
     height: 100%;
-    margin-top: 1px;
+    margin-top: 50px;
     margin-left: 0px;
   }
   #Home1 .card1 {
@@ -502,17 +410,18 @@ nav .nav_a {
     font-size: 10px;
   }
   #Home1 .card1 .skills_1 {
-    gap: 2.5rem;
-    font-size: 12px;
+    gap: 5rem;
+    font-size: 15px;
     padding-top: 0px;
   }
   #Home1 .card1 .front_end {
     font-size: 15px;
-    padding-top: 2px;
   }
   #Home1 .card1 .profile {
     font-size: 15px;
-    padding-top: 2px;
+  }
+  #Home1 .card1 .links_a {
+    gap: 3rem;
   }
   #Home1 .card1 .links {
     padding-top: 20px;
@@ -522,8 +431,8 @@ nav .nav_a {
     width: 40px;
     padding: 10px;
     font-size: 16px;
-    border-radius: 30%;
-    margin-left: 20px;
+    border-radius: 30px;
+    margin-left: 0px;
   }
   #Home1 .card1 h4 {
     font-size: 28px;
@@ -532,7 +441,7 @@ nav .nav_a {
     font-size: 15px;
   }
   #Home1 .card2 {
-    width: 60%;
+    width: 40%;
     height: 40%;
     border-radius: 50%;
     overflow: hidden;
@@ -570,20 +479,23 @@ nav .nav_a {
     font-size: 10px;
   }
   #Home1 .card1 .skills_1 {
+    gap: 3rem;
     justify-content: space-between;
     font-size: 16px;
     padding-top: 0px;
   }
   #Home1 .card1 .front_end {
     font-size: 15px;
-    padding-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   #Home1 .card1 .profile {
     font-size: 12px;
-    padding-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   #Home1 .card1 .links_a {
-    gap: 0.5rem;
+    gap: 2rem;
   }
   #Home1 .card1 .links {
     padding-top: 20px;
@@ -591,9 +503,10 @@ nav .nav_a {
   }
   #Home1 .card1 .links a {
     padding: 10px;
-    width: 35px;
+    width: 40px;
     font-size: 20px;
-    border-radius: 50px;
+    margin-left: 0px;
+    border-radius: 40px;
   }
   #Home1 .card1 h4 {
     font-size: 28px;
@@ -641,11 +554,11 @@ nav .nav_a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  padding: 10px;
   color: white;
-  font-size: 15px;
-  border-radius: 40%;
+  padding: 10px;
+  width: 40px;
+  font-size: 20px;
+  border-radius: 40px;
   border: 1px solid white;
   background-color: black;
 }
@@ -662,6 +575,11 @@ nav .nav_a {
   display: none;
 }
 
+@media (max-width: 790px) {
+  #Contact {
+    margin-left: 10px;
+  }
+}
 @media (max-width: 478px) {
   #Contact {
     display: none;
@@ -670,7 +588,7 @@ nav .nav_a {
     display: block;
     width: 80%;
     padding: 20px;
-    margin-left: 40px;
+    margin-left: 42px;
     background-color: black;
   }
   #Contact1 .links_1 {
@@ -701,9 +619,9 @@ nav .nav_a {
     justify-content: center;
     color: white;
     padding: 10px;
-    width: 35px;
+    width: 40px;
     font-size: 20px;
-    border-radius: 50px;
+    border-radius: 40px;
     border: 1px solid white;
     background-color: black;
   }
@@ -801,7 +719,7 @@ nav .nav_a {
      object-fit: cover;
 }
 
-@media (max-width: 478px) {
+@media (max-width: 980px) {
   #project {
     display: flex;
     flex-direction: column;
@@ -823,6 +741,44 @@ nav .nav_a {
   }
   #project .card1_project {
     height: 95%;
+    width: 85%;
+  }
+  #project .card2_project {
+    height: 95%;
+    width: 85%;
+  }
+  #project .card3_project {
+    height: 95%;
+    width: 85%;
+  }
+  #project .card4_project {
+    height: 95%;
+    width: 85%;
+  }
+  #project .title {
+    padding: 10px;
+    font-size: 15px;
+  }
+  #project .description {
+    gap: 8rem;
+    padding: 2px;
+    font-size: 10px;
+  }
+  #project a {
+    font-size: 30px;
+  }
+}
+@media (max-width: 790px) {
+  #project .description {
+    gap: 5rem;
+  }
+}
+@media (max-width: 478px) {
+  #project .description {
+    gap: 5rem;
+  }
+  #project .card1_project {
+    height: 95%;
     width: 80%;
   }
   #project .card2_project {
@@ -836,17 +792,5 @@ nav .nav_a {
   #project .card4_project {
     height: 95%;
     width: 80%;
-  }
-  #project .title {
-    padding: 10px;
-    font-size: 15px;
-  }
-  #project .description {
-    gap: 8rem;
-    padding: 2px;
-    font-size: 10px;
-  }
-  #project a {
-    font-size: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
